@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Contact Form (HTML Only)</title>
+</head>
+<body>
+
+  <h1>Contact Us</h1>
+
+  <form action="#" method="post">
+    <!-- Contact Info -->
+    <fieldset>
+      <legend>Your Information</legend>
+
+      <label for="name">Full Name</label><br>
+      <input id="name" name="name" type="text" placeholder="Your name" required><br><br>
+
+      <label for="email">Email</label><br>
+      <input id="email" name="email" type="email" placeholder="you@example.com" required><br><br>
+
+      <label for="phone">Phone (optional)</label><br>
+      <input id="phone" name="phone" type="tel" placeholder="+855 12 345 678"><br><br>
+    </fieldset>
+    <br>
+
+    <!-- Radio Buttons -->
+    <fieldset>
+      <legend>Reason for Contact</legend>
+
+      <label>
+        <input type="radio" name="reason" value="support" required>
+        Support
+      </label><br>
+
+      <label>
+        <input type="radio" name="reason" value="feedback">
+        Feedback
+      </label><br>
+
+      <label>
+        <input type="radio" name="reason" value="partnership">
+      Partnership
+      </label><br>
+    </fieldset>
+    <br>
+
+    <!-- Checkboxes -->
+    <fieldset>
+      <legend>Subscribe (choose any)</legend>
+
+      <label>
+        <input type="checkbox" name="subscribe_news" value="news">
+        Product News
+      </label><br>
+
+      <label>
+        <input type="checkbox" name="subscribe_tips" value="tips">
+        Tips & Tutorials
+      </label><br>
+
+      <label>
+        <input type="checkbox" name="subscribe_offers" value="offers">
+        Special Offers
+      </label><br>
+    </fieldset>
+    <br>
+
+    <!-- Message -->
+    <fieldset>
+      <legend>Your Message</legend>
+      <label for="message">Message</label><br>
+      <textarea id="message" name="message" rows="6" placeholder="Write your message..." required></textarea>
+    </fieldset>
+    <br>
+
+    <!-- Consent -->
+    <label>
+      <input type="checkbox" name="consent" value="agree" required>
+      I agree to be contacted about my request.
+    </label>
+    <br><br>
+
+    <!-- Actions -->
+    <button type="submit">Send Message</button>
+    <button type="reset">Reset</button>
+  </form>
+
+</body>
+</html>
